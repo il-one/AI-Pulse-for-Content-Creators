@@ -18,7 +18,7 @@ An automated workflow that monitors core tech vectors, pipes unstructured update
 
 ### Core Architecture & Flow
 ```text
-[ Source Feeds / Google Sheets ] ──> [ Make.com Pipeline ] ──> [ Gemini API (Synthesis & Tagging) ] ──> [ Google Doc / Dashboard Output ]
+[ Gemini API Search Tool ] ──> [ Gemini API (Synthesis & Tagging) ] ──> [ Google AI Studio Output ]
 ```
 ### Feature Matrix & Success Metrics (KPIs) 📊
 
@@ -26,10 +26,10 @@ To validate product-market fit and ensure sustained user engagement, platform he
 
 | Feature | User Value Proposition | Target Metric (KPI) | Metric Type |
 | :--- | :--- | :--- | :--- |
-| **Automated Weekly Pulse Email** | High-level synthesis delivered directly to the inbox, completely eliminating manual information hunting. | Click-Through Rate (CTR) > 18% | Engagement |
 | **AI Trend Category Tagging** | Algorithmic filtering that strips out technical noise and surfaces only niche-relevant tools (e.g., Video, Copywriting). | Tagging Accuracy > 95% | Operational Quality |
+<!--| **Automated Weekly Pulse Email** | High-level synthesis delivered directly to the inbox, completely eliminating manual information hunting. | Click-Through Rate (CTR) > 18% | Engagement |
 | **Creator Dashboard** | Centralized, searchable repository of historically logged trends for long-term content planning. | 30-Day Retention Rate > 45% | Growth / Stickiness |
-
+-->
 ---
 
 ## 📂 Repository Structure

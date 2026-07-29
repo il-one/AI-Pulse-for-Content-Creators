@@ -13,6 +13,13 @@ The velocity of AI product updates (Claude, OpenAI, Gemini, Manus AI, etc.) is o
 * **The Friction:** Information is highly unstructured, fragmented, and noisy.
 * **The Impact:** Loss of competitive edge, wasted time, and content production lag.
 
+## 👤 Personas
+| Persona | Core JTBD | Frustration Today | How AI Pulse Helps |
+| :--- | :--- | :--- | :--- |
+| **Maya**, Full-Time YouTuber<br>*(200K subs, solo operator)* | Stay ahead of AI editing/scripting tools to maintain production quality edge | Discovers features months late via YouTube comments or competitor videos | Weekly digest flags relevant updates for her video workflow with clear impact summaries |
+| **Darius**, Content Agency Owner<br>*(manages 8 creator clients)* | Keep his team and clients on the best-value AI stack across writing, image, and video tools | Manually checks 12+ tool blogs monthly; pricing changes cause budget overruns | Team dashboard shows full toolstack status; pricing alerts trigger proactively |
+| **Jen**, Hobbyist Turned Creator<br>*(growing, 15K subs)* | Learn the AI landscape without drowning in technical content | Overwhelmed by news sites, Discord servers, and tool-specific emails | Simple, jargon-free digest with a 'what this means for you' explainer per update |
+
 ## 🚀 The Solution
 An automated workflow that monitors core tech vectors, pipes unstructured updates through the **Gemini API** for contextual synthesis, tags them by creator niche (e.g., video, copy, design), and outputs clean, actionable insights directly to a user-facing dashboard and newsletter.
 

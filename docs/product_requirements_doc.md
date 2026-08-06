@@ -70,3 +70,32 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 | **Maya**, Full-Time YouTuber<br>*(200K subs, solo operator)* | Stay ahead of AI editing/scripting tools to maintain production quality edge | Discovers features months late via YouTube comments or competitor videos | Weekly digest flags relevant updates for her video workflow with clear impact summaries |
 | **Darius**, Content Agency Owner<br>*(manages 8 creator clients)* | Keep his team and clients on the best-value AI stack across writing, image, and video tools | Manually checks 12+ tool blogs monthly; pricing changes cause budget overruns | Team dashboard shows full toolstack status; pricing alerts trigger proactively |
 | **Jen**, Hobbyist Turned Creator<br>*(growing, 15K subs)* | Learn the AI landscape without drowning in technical content | Overwhelmed by news sites, Discord servers, and tool-specific emails | Simple, jargon-free digest with a 'what this means for you' explainer per update |
+
+---
+
+## 5. User Stories & Acceptance Criteria
+
+### P0 — Launch Blockers
+
+* **As a creator, I want to view updates of AI platforms, tools, and LLMs so that I can stay current without visiting multiple sites.**
+* **Given** it is 9am on a weekday in my timezone **when** updates exist for the market, **then** I can view a formatted list of updates.
+* **Given** no updates exist, **when** when the digest runs, **then:** no updates are listed.
+
+
+* **As a creator, I want each update to include a plain-language 'what this means for you' summary so that I understand the impact without reading technical changelogs.**
+* **Given** a tool releases an update **when** it appears in my digest or dashboard, **then** it includes a 1-3 sentence impact summary written for creators, not developers.
+
+---
+
+### P1 — Important
+
+* **As a creator, I want to see a changelog timeline per tool** so that I can review the history of a specific tool's evolution.
+* **As a creator, I want to filter updates by category** (pricing, features, model quality) so that I can focus on what matters most to me.
+* **As a creator, I want to mark an update as 'read' or 'saved'** so that I can manage my update inbox.
+
+---
+
+### P2 — Nice to Have
+
+* **As an agency owner, I want to share digest summaries with my team** so that everyone stays aligned.
+* **As a power user, I want Slack/Discord notifications** for real-time alerts.

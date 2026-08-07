@@ -75,27 +75,33 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 
 ## 5. User Stories & Acceptance Criteria
 
-### P0 — Launch Blockers
+### P0 — MVP Launch Blockers
 
-* **As a creator, I want to view updates of AI platforms, tools, and LLMs so that I can stay current without visiting multiple sites.**
+**As a creator, I want to view updates of AI platforms, tools, and LLMs so that I can stay current without visiting multiple sites.**
 * **Given** it is 9am on a weekday in my timezone **when** updates exist for the market, **then** I can view a formatted list of updates.
 * **Given** no updates exist, **when** when the digest runs, **then:** no updates are listed.
 
 
-* **As a creator, I want each update to include a plain-language 'what this means for you' summary so that I understand the impact without reading technical changelogs.**
+**As a creator, I want each update to include a plain-language 'what this means for you' summary so that I understand the impact without reading technical changelogs.**
 * **Given** a tool releases an update **when** it appears in my digest or dashboard, **then** it includes a 1-3 sentence impact summary written for creators, not developers.
 
 ---
 
-### P1 — Important
+## 6. Functional Requirements
 
-* **As a creator, I want to see a changelog timeline per tool** so that I can review the history of a specific tool's evolution.
-* **As a creator, I want to filter updates by category** (pricing, features, model quality) so that I can focus on what matters most to me.
-* **As a creator, I want to mark an update as 'read' or 'saved'** so that I can manage my update inbox.
+### Update Monitoring
 
----
+| Feature | Requirement Description |
+| :--- | :--- |
+| Source Tracking | The system shall monitor official changelogs, release notes, and product blogs for all tracked tools. |
+| Detection Window | The system shall detect updates within 48 hours of official publication. |
+| Impact Summarization | The system shall generate a plain-language impact summary for each update using AI summarization. |
 
-### P2 — Nice to Have
+### Dashboard
 
-* **As an agency owner, I want to share digest summaries with my team** so that everyone stays aligned.
-* **As a power user, I want Slack/Discord notifications** for real-time alerts.
+| Feature | Requirement Description |
+| :--- | :--- |
+| Activity Feed | The system shall display a feed of updates that includes a concise title, description, tool, announcement link, and date. |
+| Categorization | The system shall categorize each update as: `Model`, `Feature`, `Funding`, `Viral`, or `Other`. |
+| Relevance Score | The system shall display a relevance score based on popularity, publicity, and impact. |
+

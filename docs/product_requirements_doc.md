@@ -105,3 +105,16 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 | Categorization | The system shall categorize each update as: `Model`, `Feature`, `Funding`, `Viral`, or `Other`. |
 | Relevance Score | The system shall display a relevance score based on popularity, publicity, and impact. |
 
+---
+
+## 7. Competitive Analysis
+
+| Competitor | How They Solve It | Strengths | Gaps |
+| :--- | :--- | :--- | :--- |
+| **There's An AI For That** | Broad AI tool directory | Large database, SEO traffic | Displays trending tools, but doesn’t surface most recent updates |
+| **Futurepedia** | AI tool news & directory | Active community, newsletter | Not focused on updates to existing or trending tools |
+| **Product Hunt** | Daily product launches | Real-time, community-driven | Not focused on updates to existing tools, noisy |
+| **Tool-specific newsletters** *(e.g., 'The Rundown')* | Curated AI news digest | High-quality writing, trusted | Barriers to accessibility; long-form content. |
+| **Manual monitoring** *(creator's current solution)* | RSS readers, email subscriptions, social media | Free, direct from source | Time-intensive, no summarization, no consolidation |
+
+Product differentiation: combines toolstack tracking + creator-relevant summarization + a single consolidated digest. The 'what this means for you' layer and the relevance score offer differentiated value.

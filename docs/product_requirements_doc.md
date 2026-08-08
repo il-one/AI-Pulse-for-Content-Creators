@@ -5,7 +5,7 @@
 ## Team & Roles
 
 | Role | Name | Contact |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | **Product Manager** | IL | [email] |
 | **Engineering Lead** | [Eng Lead] | [email] |
 | **Design Lead** | [Design Lead] | [email] |
@@ -109,7 +109,7 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 
 ## 7. Competitive Analysis
 
-| Competitor | How They Solve It | Strengths | Gaps |
+| Competitor | Offering | Strengths | Gaps |
 | :--- | :--- | :--- | :--- |
 | **There's An AI For That** | Broad AI tool directory | Large database, SEO traffic | Displays trending tools, but doesn’t surface most recent updates |
 | **Futurepedia** | AI tool news & directory | Active community, newsletter | Not focused on updates to existing or trending tools |

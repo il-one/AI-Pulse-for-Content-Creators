@@ -117,4 +117,4 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 | **Tool-specific newsletters** *(e.g., 'The Rundown')* | Curated AI news digest | High-quality writing, trusted | Barriers to accessibility; long-form content. |
 | **Manual monitoring** *(creator's current solution)* | RSS readers, email subscriptions, social media | Free, direct from source | Time-intensive, no summarization, no consolidation |
 
-Product differentiation: combines toolstack tracking + creator-relevant summarization + a single consolidated digest. The 'what this means for you' layer and the relevance score offer differentiated value.
+**Product differentiation:** combines toolstack tracking + creator-relevant summarization + a single consolidated digest. The 'what this means for you' layer and the relevance score offer differentiated value.

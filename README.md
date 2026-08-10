@@ -22,11 +22,12 @@ An automated workflow that monitors core tech vectors, pipes unstructured update
 ```
 ### Feature Matrix & Success Metrics (KPIs) 📊
 
-To validate product-market fit and ensure sustained user engagement, platform health is anchored against a North Star metric of **30-Day Subscriber Retention**. The features below map directly to quantifiable, data-driven product outcomes:
+To validate product-market fit and ensure sustained user engagement, platform health is anchored against a North Star metric of **24H Freshness Retention (24H-FR)**. The features below map directly to quantifiable, data-driven product outcomes:
 
 | Feature | User Value Proposition | Target Metric (KPI) | Metric Type |
 | :--- | :--- | :--- | :--- |
 | **AI Trend Category Tagging** | Algorithmic filtering that strips out technical noise and surfaces only niche-relevant tools (e.g., Video, Copywriting). | Tagging Accuracy > 95% | Operational Quality |
+| **24-48H Velocity Scoring** | Sliding-window popularity engine that ranks tools by isolating immediate star surges, social spikes, and launch-day traffic within 48 hours. | Processing Latency < 5m | Core Analytics |
 <!--| **Automated Weekly Pulse Email** | High-level synthesis delivered directly to the inbox, completely eliminating manual information hunting. | Click-Through Rate (CTR) > 18% | Engagement |
 | **Creator Dashboard** | Centralized, searchable repository of historically logged trends for long-term content planning. | 30-Day Retention Rate > 45% | Growth / Stickiness |
 -->
@@ -53,6 +54,6 @@ This repository serves as a comprehensive Product Management artifact library. I
 
 Hiring managers, engineering leads, and product leaders can audit the comprehensive product management lifecycle through the following strategic layers:
 
-1.  **Evaluate Product Strategy:** Review the [Product Requirement Document (PRD)](./docs/product_requirement_doc.md) to audit feature scoping, agile user prioritization frameworks, and non-functional engineering constraints.
+1.  **Evaluate Product Strategy:** Review the [Product Requirement Document (PRD)](./docs/product_requirements_doc.md) to audit feature scoping, agile user prioritization frameworks, and non-functional engineering constraints.
 2.  **Examine Technical Feasibility:** Navigate to the [/src directory](./src/) to inspect the API payloads, contextual prompt structures, and automated programmatic workflow logic.
 3.  **Analyze Data & Growth Mindset:** Audit the [KPI Framework](./analytics/kpi_framework.md) to understand how telemetry, automated database tracking, and iterative product loop analysis are applied to drive feature optimization.

@@ -1,6 +1,6 @@
 # AI Pulse Tracker for Content Creators
 
-> **Version:** v0.1 Draft  |  **Status:** In Production  |  **Date:** June 2026
+> **Version:** v0.1 Draft  |  **Status:** In Production  |  **Date:** July 2026
 
 ## Team & Roles
 
@@ -118,3 +118,17 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 | **Manual monitoring** *(creator's current solution)* | RSS readers, email subscriptions, social media | Free, direct from source | Time-intensive, no summarization, no consolidation |
 
 **Product differentiation:** combines toolstack tracking + creator-relevant summarization + a single consolidated digest. The 'what this means for you' layer and the relevance score offer differentiated value.
+
+---
+
+## 8. Success Metrics
+
+### Gemini Search Grounding Tool
+
+| Core Dimension | Specific Metric | Baseline (Default System) | Timeline Target (90 Days) | Measurement & Evaluation Method |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Grounding Factuality & Accuracy** | **Factual Precision Rate:** Percentage of generated claims that align perfectly with the cited web source. | **~68.8%**<br>*(Industry standard baseline for Google's FACTS Benchmark suite)* | **90% - 95%** | **LLM-as-a-Judge + Human Audit:** Parse the native API `groundingMetadata` object. Use a secondary model to isolate claims in the text and cross-verify them explicitly against the content found at the cited URLs. |
+| **2. Dynamic Retrieval Sensitivity** | **Trigger Accuracy Rate:** How reliably the tool chooses to use search when an obscure or time-sensitive update is requested. | **70%** accuracy using Google's default Dynamic Retrieval Threshold. | **98%** optimized trigger rate | **Threshold Tuning:** Test across a curated golden set of 200 time-sensitive/obscure tech prompts. Adjust the Gemini **Dynamic Retrieval Slider** (0.0 always grounds to 1.0 never grounds). Target a threshold around **0.3 to 0.4** to force aggressive lookups. |
+| **3. Latency & Responsiveness** | **End-to-End Latency:** Total turnaround time from prompt submission to completed grounded response. | **3.0 to 10.0 seconds**<br>*(Due to search query rewriting and live web parsing overhead)* | **< 3.5 seconds** | **Cloud Logging Tools:** Track total response time metrics via Google Cloud Metrics Explorer. Optimize by running streaming responses (`generateContentStream`) to improve Time-to-First-Token (TTFT) performance. |
+| **4. Citation Integrity & UX Compliance** | **Citation Attribution Rate:** Percentage of factual sentences mapped to valid, clickable source URLs. | **100% text-to-source mapping** *(Google forces metadata delivery, but LLMs often break formatting during raw output text parsing).* | **100% strict matching** (Zero broken or unassigned claims) | **JSON Schema Validation:** Write strict regex/schema parsers to intercept Gemini's output. Ensure every claim references an active domain from the `groundingMetadata.groundingChunks` array before displaying it to the user. |
+

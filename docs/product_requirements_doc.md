@@ -132,3 +132,12 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 | **3. Latency & Responsiveness** | **End-to-End Latency:** Total turnaround time from prompt submission to completed grounded response. | **3.0 to 10.0 seconds**<br>*(Due to search query rewriting and live web parsing overhead)* | **< 3.5 seconds** | **Cloud Logging Tools:** Track total response time metrics via Google Cloud Metrics Explorer. Optimize by running streaming responses (`generateContentStream`) to improve Time-to-First-Token (TTFT) performance. |
 | **4. Citation Integrity & UX Compliance** | **Citation Attribution Rate:** Percentage of factual sentences mapped to valid, clickable source URLs. | **100% text-to-source mapping** *(Google forces metadata delivery, but LLMs often break formatting during raw output text parsing).* | **100% strict matching** (Zero broken or unassigned claims) | **JSON Schema Validation:** Write strict regex/schema parsers to intercept Gemini's output. Ensure every claim references an active domain from the `groundingMetadata.groundingChunks` array before displaying it to the user. |
 
+---
+
+### 9. Edge Cases & Error States
+
+| Trigger | Expected Behavior | User-Facing Message |
+| :--- | :--- | :--- |
+| **AI summary fails to generate** | Fall back to first 2 sentences of official changelog | *No message — show changelog excerpt labeled 'Official release notes'* |
+| **No updates since last digest** | Skip digest OR send 'all clear' (A/B test this) | `'Try refreshing.'` |
+| **Tool feed goes offline for > 48hrs** | Alert internal ops team; mark tool as 'monitoring interrupted' | Yellow badge on tool in dashboard: `'Updates paused'` |

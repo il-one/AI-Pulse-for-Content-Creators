@@ -17,8 +17,10 @@ The velocity of AI product updates (Claude, OpenAI, Gemini, Manus AI, etc.) is o
 An automated workflow that monitors core tech vectors, pipes unstructured updates through the **Gemini API** for contextual synthesis, tags them by creator niche (e.g., video, copy, design), and outputs clean, actionable insights directly to a user-facing dashboard and newsletter.
 
 ### Core Architecture & Flow
-```text
-[ Gemini API Search Tool ] ──> [ Gemini API (Synthesis & Tagging) ] ──> [ Google AI Studio Output ]
+```mermaid
+graph LR
+    A[Gemini API Search Tool] --> B[Gemini API Synthesis & Tagging]
+    B --> C[Google AI Studio Output]
 ```
 ### Feature Matrix & Success Metrics (KPIs) 📊
 

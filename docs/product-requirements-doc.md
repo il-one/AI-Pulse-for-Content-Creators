@@ -1,6 +1,6 @@
 # AI Pulse Tracker for Content Creators
 
-> **Version:** v0.1 Draft  |  **Status:** In Production  |  **Date:** July 2026
+> **Version:** v2.0 Draft  |  **Status:** In Production  |  **Date:** July 2026
 
 ## Team & Roles
 

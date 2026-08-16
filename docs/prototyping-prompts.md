@@ -21,3 +21,7 @@
   Crawls Tech Vectors                  Extracts Actionable                  Renders Structured
   (LLMs, Video AI, Audio,              Insights & Applies Niche             Cards & Digest
   Image Gen, Editing Tools)            Taxonomy (Video/Copy/Design)         Blocks
+
+### 1.3 System & Production Prompt Templates
+
+System Prompt:

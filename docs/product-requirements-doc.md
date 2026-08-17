@@ -138,6 +138,7 @@ AI tool release velocity has increased 3x since 2024. The creator economy has si
 
 | Trigger | Expected Behavior | User-Facing Message |
 | :--- | :--- | :--- |
-| **AI summary fails to generate** | Fall back to first 2 sentences of official changelog | *No message — show changelog excerpt labeled 'Official release notes'* |
+| **AI summary fails to generate** | Fall back to first 2 sentences of official changelog | *No message — show changelog excerpt labeled 'Official release notes'* OR `'Gemini generation failed, using fallback updates: [Gemini Error Message]'`|
 | **No updates since last digest** | Skip digest OR send 'all clear' (A/B test this) | `'Try refreshing.'` |
 | **Tool feed goes offline for > 48hrs** | Alert internal ops team; mark tool as 'monitoring interrupted' | Yellow badge on tool in dashboard: `'Updates paused'` |
+| **Other errors** | Fall back to previous updates. | `'Error fetching AI updates: [error]'` |

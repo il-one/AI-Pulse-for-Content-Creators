@@ -30,19 +30,19 @@
 This step-by-step walkthrough demonstrates how the core tracking engine was prototyped, tested, and iterated within the Google AI Studio Prompt Panel—evolving from a cold-start prompt to a production-ready, schema-enforced API prompt.
 
 #### 🟢 Initial Base Prompt (Iteration 0 — Cold Start Prototype)
-> The initial exploratory prompt submitted to Google AI Studio to test Gemini's base search capabilities and real-time retrieval across major AI ecosystems:
-> 
+**Objective**
+Test Gemini's base search capabilities and real-time retrieval across major AI ecosystems relevant to content creators.
+
+Prompt:
 > Create a dashboard that tracks the latest updates in the past 48 hrs for AI tools that can be used for content creation. Focus on the Google/Gemini ecosystem, Claude, ChatGPT, and tools like Manus, GenSpark, and other viral tools. Include links to the official announcement for each item if applicable.
 
-#### 🟡 Iteration 1 — Minor Redesign to Refresh Updates and Filter Updates 
-### Iteration 0 → Iteration 1
-
-**Observed Issues**
+**Evaluation & Limitations (Iteration 0 Output):**
 - The **Refresh** button was visually difficult to locate among other page elements.
 - The update feed was limited to a fixed **48-hour window**.
 - Given the high velocity of AI product releases, users needed more control over how recent the displayed updates were.
 
-**Product Decision**
+#### 🟡 Iteration 1 — Minor Redesign to Refresh Updates and Filter Updates
+**Product Decision & Objective**
 - Improve the visibility and placement of the **Refresh** control.
 - Introduce a **24-hour / 48-hour toggle** so users can switch between a more focused, recent view and a broader update window.
 

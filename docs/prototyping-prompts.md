@@ -34,15 +34,26 @@ This step-by-step walkthrough demonstrates how the core tracking engine was prot
 > 
 > Create a dashboard that tracks the latest updates in the past 48 hrs for AI tools that can be used for content creation. Focus on the Google/Gemini ecosystem, Claude, ChatGPT, and tools like Manus, GenSpark, and other viral tools. Include links to the official announcement for each item if applicable.
 
-**Evaluation & Limitations (Iteration 0 Output):**
-* Fresh, modern design.
-* Refresh button lost in group of other app elements.
-* Lacks option for more recent updates compared to 48 hours.
-<!-- -Failed to categorize tools into actionable creator disciplines (Video, Copy, Visuals, Workflow Automation). -->
-
 #### 🟡 Iteration 1 — Minor Redesign to Refresh Updates and Filter Updates 
-> Move the refresh button all the way to the right of the div. Add a toggle between 24 hrs and 48 hrs to display the list results accordingly. Make sure it pulls the 48 hrs news first and the toggle will act as a filter.
-Apply style changes to the selected element(s).
+### Iteration 0 → Iteration 1
+
+**Observed Issues**
+- The **Refresh** button was visually difficult to locate among other page elements.
+- The update feed was limited to a fixed **48-hour window**.
+- Given the high velocity of AI product releases, users needed more control over how recent the displayed updates were.
+
+**Product Decision**
+- Improve the visibility and placement of the **Refresh** control.
+- Introduce a **24-hour / 48-hour toggle** so users can switch between a more focused, recent view and a broader update window.
+
+**Prompt Change**
+> Move the Refresh button all the way to the right of the div. Add a toggle between 24 hrs and 48 hrs to display the list results accordingly. Make sure it pulls the 48 hrs news first and the toggle will act as a filter.
+> Apply style changes to the selected element(s).
+
+**Result**
+- Refresh action easier to identify.
+- Greater user control over update recency.
+- Better alignment between the product experience and the rapidly changing AI landscape.
 
 **Evaluation & Limitations (Iteration 1 Output):**
 * Lacks relevance score.

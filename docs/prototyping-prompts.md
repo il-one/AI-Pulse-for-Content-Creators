@@ -56,15 +56,30 @@ Prompt:
 - Better alignment between the product experience and the rapidly changing AI landscape.
 
 **Evaluation & Limitations (Iteration 1 Output):**
-* Lacks relevance score.
-* Fails to categorize tool updates based on type of update
+- Updates were presented without a clear indication of their relative importance.
+  * Lacks relevance score.
+  * All items appeared to have equal priority, increasing the cognitive effort required to identify the most relevant updates.
+- Failed to categorize tool updates based on type of update.
 
 #### 🟡  Iteration 2 — Redesign to Add Elements for Each Update Card
+**Product Decision & Objective**
+Improve the scanability and prioritization of the update feed by giving users a clearer indication of an update's significance and type:
+- Add a **Relevance Score (0–100)** to each update card.
+- Calculate the score based on **popularity, publicity, and potential creator impact**.
+- Add a standardized update category to help users quickly understand the nature
+  of each announcement.
+
+**Prompt Change**
 > Display these for each card:
 > 
 > relevance score (0-100): based on popularity, publicity, and impact.
 > 
 > category: Model, Feature, Funding, Viral, or Other
+
+**Result**
+- Each update received a visible indicator of its relative significance.
+- Users could scan the feed more efficiently and identify higher-priority updates.
+- Standardized categories improved the structure and readability of the update feed.
 
 ---
 

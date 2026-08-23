@@ -1,0 +1,297 @@
+{
+  "$schema_version": "1.0.0",
+  "dataset": {
+    "name": "AI Pulse Golden Dataset",
+    "description": "Golden evaluation set for AI Pulse's ability to identify, classify, prioritize, and summarize AI product updates.",
+    "categories": [
+      "Model",
+      "Feature",
+      "Funding",
+      "Viral",
+      "Other"
+    ]
+  },
+  "test_cases": [
+    {
+      "id": "TC-001",
+      "scenario": "major_model_release",
+      "description": "Major model release with clear implications for creator workflows.",
+      "input": {
+        "requested_window_hours": 48,
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/official-model-announcement",
+        "published_at": "2026-07-20T14:00:00Z",
+        "title": "Example AI Model Released",
+        "evidence": "The company announced a new foundation model with improved video generation, longer context, and faster generation for supported workflows."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Model",
+        "relevance_score_range": [85, 100],
+        "key_facts": [
+          "A new model was released",
+          "The model includes video-related capabilities",
+          "The announcement occurred within the requested time window"
+        ],
+        "creator_impact": "High",
+        "must_not_claim": [
+          "Universal availability if the source does not state it",
+          "Capabilities not described in the announcement"
+        ]
+      }
+    },
+    {
+      "id": "TC-002",
+      "scenario": "feature_update",
+      "description": "Product feature release that improves an existing creator workflow without introducing a new model.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/official-feature-announcement",
+        "published_at": "2026-07-21T09:00:00Z",
+        "title": "New Image Editing Workflow",
+        "evidence": "The company added batch background removal and expanded export controls to its existing image editor."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Feature",
+        "relevance_score_range": [70, 95],
+        "key_facts": [
+          "An existing product gained new functionality",
+          "The new functionality affects image editing workflow",
+          "The announcement occurred within the requested time window"
+        ],
+        "creator_impact": "High",
+        "must_not_claim": [
+          "A new model was released",
+          "Capabilities beyond batch background removal and expanded export controls"
+        ]
+      }
+    },
+    {
+      "id": "TC-003",
+      "scenario": "funding_announcement",
+      "description": "Funding announcement for an AI company with potentially meaningful market implications but limited immediate workflow impact.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/official-funding-announcement",
+        "published_at": "2026-07-21T16:30:00Z",
+        "title": "AI Company Announces New Funding Round",
+        "evidence": "The company announced a new funding round intended to expand its AI platform and accelerate product development."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Funding",
+        "relevance_score_range": [50, 80],
+        "key_facts": [
+          "The company announced a funding round",
+          "The company plans to use the funding to expand its AI platform"
+        ],
+        "creator_impact": "Medium",
+        "must_not_claim": [
+          "Specific product improvements unless stated",
+          "Immediate benefits to creators unless supported by the source"
+        ]
+      }
+    },
+    {
+      "id": "TC-004",
+      "scenario": "viral_emerging_tool",
+      "description": "Rapidly gaining AI tool with strong creator interest but limited formal product-announcement material.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "secondary",
+        "source_url": "https://example.com/viral-tool-coverage",
+        "published_at": "2026-07-21T11:00:00Z",
+        "title": "New AI Video Tool Gains Rapid Attention",
+        "evidence": "The new AI video tool is gaining substantial attention among creators and is being widely shared for its automated short-form video workflow."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Viral",
+        "relevance_score_range": [70, 95],
+        "key_facts": [
+          "The tool is receiving rapid attention",
+          "The tool is positioned around a video creation workflow"
+        ],
+        "creator_impact": "High",
+        "source_integrity_requirement": "Clearly distinguish secondary coverage from an official product announcement.",
+        "must_not_claim": [
+          "Official launch details not present in the source",
+          "Specific performance claims without evidence"
+        ]
+      }
+    },
+    {
+      "id": "TC-005",
+      "scenario": "irrelevant_enterprise_update",
+      "description": "Recent AI announcement that should be excluded because it has little meaningful impact on creators.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/enterprise-infrastructure-update",
+        "published_at": "2026-07-21T08:00:00Z",
+        "title": "Enterprise Infrastructure Update",
+        "evidence": "The company announced an internal infrastructure optimization designed to improve enterprise deployment administration."
+      },
+      "expected": {
+        "should_include": false,
+        "category": "Other",
+        "relevance_score_range": [0, 35],
+        "creator_impact": "Low",
+        "exclusion_reason": "The announcement does not materially affect creator workflows, capabilities, or tools.",
+        "must_not_claim": [
+          "The update is creator-relevant simply because it involves AI"
+        ]
+      }
+    },
+    {
+      "id": "TC-006",
+      "scenario": "stale_update_outside_window",
+      "description": "An otherwise relevant announcement that falls outside the requested recency window.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/older-design-feature",
+        "published_at": "2026-07-17T10:00:00Z",
+        "title": "New Design Feature Announced",
+        "evidence": "The company announced an AI-assisted layout feature for its design application."
+      },
+      "expected": {
+        "should_include": false,
+        "category": "Feature",
+        "relevance_score_range": [60, 90],
+        "creator_impact": "High",
+        "exclusion_reason": "The update is relevant but falls outside the requested 48-hour window.",
+        "recency_rule": "Do not include solely because the update remains relevant."
+      }
+    },
+    {
+      "id": "TC-007",
+      "scenario": "duplicate_announcement",
+      "description": "The same underlying announcement appears through multiple sources.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "secondary",
+        "source_url": "https://example.com/duplicate-coverage",
+        "published_at": "2026-07-21T18:00:00Z",
+        "title": "Company X Launches Writing Feature",
+        "evidence": "Company X launched the same AI writing feature announced in the official source earlier that day."
+      },
+      "related_sources": [
+        {
+          "source_url": "https://example.com/official-writing-feature",
+          "published_at": "2026-07-21T09:00:00Z"
+        }
+      ],
+      "expected": {
+        "should_include": true,
+        "category": "Feature",
+        "deduplication": {
+          "required": true,
+          "expected_behavior": "Represent the underlying update once and prefer the official source for attribution."
+        },
+        "relevance_score_range": [70, 90],
+        "creator_impact": "High",
+        "must_not_claim": [
+          "Two separate product launches",
+          "Additional capabilities that appear only in duplicated coverage"
+        ]
+      }
+    },
+    {
+      "id": "TC-008",
+      "scenario": "ambiguous_category",
+      "description": "Announcement combines a product capability release with a broader launch that could be classified multiple ways.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/ambiguous-launch",
+        "published_at": "2026-07-21T13:00:00Z",
+        "title": "Creative AI Platform Launch",
+        "evidence": "The company launched a new creative AI platform that includes a newly released image-generation model and several workflow features."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Model",
+        "category_rationale": "The primary announcement centers on a newly released model; the workflow features are supporting capabilities.",
+        "relevance_score_range": [80, 100],
+        "creator_impact": "High",
+        "must_not_claim": [
+          "That the update is exclusively a feature release",
+          "Capabilities not described in the source"
+        ]
+      }
+    },
+    {
+      "id": "TC-009",
+      "scenario": "missing_official_source",
+      "description": "Relevant update is reported by secondary sources, but no official announcement can be verified.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "secondary",
+        "source_url": "https://example.com/rumored-ai-feature",
+        "published_at": "2026-07-21T20:00:00Z",
+        "title": "Reports Suggest AI Writing Upgrade Is Coming",
+        "evidence": "Multiple sources report that the company may soon introduce a new AI writing capability, but no official announcement is available."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Other",
+        "relevance_score_range": [35, 65],
+        "creator_impact": "Potential",
+        "source_integrity_requirement": "Clearly label the item as reported or unconfirmed.",
+        "must_not_claim": [
+          "The feature has launched",
+          "The capability is generally available",
+          "Official confirmation exists"
+        ]
+      }
+    },
+    {
+      "id": "TC-010",
+      "scenario": "creator_specific_relevance",
+      "description": "Update is moderately important to the broader AI market but highly relevant to a specific creator niche.",
+      "input": {
+        "requested_window_hours": 48
+      },
+      "source": {
+        "source_type": "official",
+        "source_url": "https://example.com/design-workflow-update",
+        "published_at": "2026-07-21T15:00:00Z",
+        "title": "New AI Design Workflow Integration",
+        "evidence": "The company added an AI-assisted design workflow that automatically generates layout variations from an existing creative brief."
+      },
+      "expected": {
+        "should_include": true,
+        "category": "Feature",
+        "relevance_score_range": [85, 100],
+        "creator_impact": "High",
+        "relevance_rationale": "The capability directly affects the target Design creator's workflow even if the announcement has limited broader market attention.",
+        "must_not_claim": [
+          "High general-market popularity is required for high creator relevance",
+          "Support for workflows not described in the source"
+        ]
+      }
+    }
+  ]
+}

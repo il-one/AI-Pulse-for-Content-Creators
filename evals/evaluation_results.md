@@ -2,7 +2,7 @@
 
 ## 1. Evaluation Overview
 
-This document records the results of AI Pulse evaluations across prompt,
+This document defines the requirements for AI Pulse evaluations across prompt,
 model, and system iterations.
 
 The purpose of the evaluation is to determine whether AI Pulse can reliably:
@@ -56,5 +56,41 @@ Each dimension is scored using the five-point rubric defined in
 [`evaluation_rubric.md`](./evaluation_rubric.md).
 
 The weighted AI Quality Score is calculated using the rubric's defined weights.
+
+---
+
+## 3. Iteration Results
+
+### 3.1 Iteration 0 — Cold-Start Baseline
+
+**Objective**
+
+Establish a baseline for AI Pulse using the initial cold-start prompt before
+introducing additional evaluation controls or structured output requirements.
+
+**Configuration**
+
+Note the prompt instructions and details for the baseline, including 
+- Prompt
+- Requested time window
+- Market segments
+- Expected categories
+- Evaluation status
+
+Record the results for the criteria in the [`Evaluation Method`](https://github.com/il-one/AI-Pulse-for-Content-Creators/edit/main/evals/evaluation_results.md#1-evaluation-overview).
+
+**Observed Behavior**
+
+Document only behaviors observed during the actual evaluation.
+
+**Example placeholders:**
+
+- `[Observed issue]`
+- `[Observed issue]`
+- `[Observed strength]`
+
+**Evaluation Decision**
+
+Note the decision based on observed behavior.
 
 ---

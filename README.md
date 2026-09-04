@@ -54,7 +54,7 @@ This repository serves as a comprehensive Product Management artifact library. I
 
 ## 🛠️ How to Review This Portfolio Project
 
-Hiring managers, engineering leads, and product leaders can audit the comprehensive product management lifecycle through the following strategic layers:
+Note that specific details of product features, releases, and results may be omitted and replaced with templates. Hiring managers, engineering leads, and product leaders can audit the comprehensive product management lifecycle through the following strategic layers:
 
 1.  **Evaluate Product Strategy:** Review the [Product Requirement Document (PRD)](./docs/product_requirements_doc.md) to audit feature scoping, agile user prioritization frameworks, and non-functional engineering constraints.
 2.  **Examine Technical Feasibility:** Navigate to the [/src directory](./src/) to inspect the API payloads, contextual prompt structures, and automated programmatic workflow logic.

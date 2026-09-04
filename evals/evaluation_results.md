@@ -94,3 +94,88 @@ Document only behaviors observed during the actual evaluation.
 Note the decision based on observed behavior.
 
 ---
+
+### 3.2 Iteration 1 — Recency Controls & Refresh UX
+
+**Objective**
+
+Improve the update experience by making the refresh action easier to access
+and allowing users to switch between 24-hour and 48-hour views.
+
+**Product Intervention**
+
+- Moved the Refresh control to a more prominent location.
+- Added a 24-hour / 48-hour toggle.
+- Preserved the 48-hour retrieval set while using the toggle as a filter.
+
+**Evaluation Status**
+
+Note status.
+
+**Results Table Template**
+
+| Dimension | Before | After | Change |
+|---|---:|---:|---:|
+| Factual Accuracy |  |  |  |
+| Source Integrity |  |  |  |
+| Recency |  |  |  |
+| Market Relevance |  |  |  |
+| Categorization |  |  |  |
+| Summary Quality |  |  |  |
+| **Overall AI Quality Score** |  |  |  |
+
+**Product Interpretation**
+
+The UI intervention should only be credited with an evaluation improvement
+where the measured results demonstrate a corresponding change.
+
+---
+
+### 3.3 Iteration 2 — Relevance Scoring & Update Categorization
+
+**Objective**
+
+Improve the prioritization and scanability of AI market updates by adding
+structured relevance scoring and standardized update categories.
+
+**Product Intervention**
+
+- Added a relevance score from 0–100.
+- Added standardized categories:
+  - Model
+  - Feature
+  - Funding
+  - Viral
+  - Other
+- Defined relevance in terms of market significance rather than popularity alone.
+
+**Evaluation Status**
+
+Note status.
+
+**Results Table Template**
+
+| Dimension | Before | After | Change |
+|---|---:|---:|---:|
+| Factual Accuracy |  |  |  |
+| Source Integrity |  |  |  |
+| Recency |  |  |  |
+| Market Relevance |  |  |  |
+| Categorization |  |  |  |
+| Summary Quality |  |  |  |
+| **Overall AI Quality Score** |  |  |  |
+
+**Product Interpretation**
+
+The primary hypotheses for this iteration:
+
+1. Structured categorization should improve classification consistency.
+2. Explicit relevance scoring should improve prioritization of meaningful
+   market developments.
+3. Defining market relevance independently from popularity should reduce
+   high-noise, low-impact updates.
+
+These hypotheses must be validated through evaluation results rather than
+assumed to be true.
+
+---

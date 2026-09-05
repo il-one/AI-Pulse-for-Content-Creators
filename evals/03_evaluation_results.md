@@ -28,7 +28,7 @@ defined in [`evaluation_rubric.md`](./evaluation_rubric.md).
 ## 2. Evaluation Configuration
 
 | Field | Value |
-|---|---|
+|:---|:---|
 | Golden dataset | [`golden_dataset.json`](./golden_dataset.json) |
 | Evaluation rubric | [`evaluation_rubric.md`](./evaluation_rubric.md) |
 | Dataset version | 1.0.0 |
@@ -115,7 +115,7 @@ Note status.
 **Results Table Template**
 
 | Dimension | Before | After | Change |
-|---|---:|---:|---:|
+|:---|---|---|---|
 | Factual Accuracy |  |  |  |
 | Source Integrity |  |  |  |
 | Recency |  |  |  |
@@ -156,7 +156,7 @@ Note status.
 **Results Table Template**
 
 | Dimension | Before | After | Change |
-|---|---:|---:|---:|
+|:---|---|---|---|
 | Factual Accuracy |  |  |  |
 | Source Integrity |  |  |  |
 | Recency |  |  |  |
@@ -179,3 +179,26 @@ These hypotheses must be validated through evaluation results rather than
 assumed to be true.
 
 ---
+
+## 4. Cross-Iteration Comparison
+
+This table provides the primary view of whether the system is improving
+over time.
+
+| Iteration | Factual Accuracy | Source Integrity | Recency | Market Relevance | Categorization | Summary Quality | Overall |
+|:---|---|---|---|---|---|---|---|
+| Iteration 0 |  |  |  |  |  |  |  |
+| Iteration 1 |  |  |  |  |  |  |  |
+| Iteration 2 |  |  |  |  |  |  |  |
+| Iteration 3 |  |  |  |  |  |  |  |
+
+### Interpretation
+
+Evaluation should focus on both:
+
+- **Aggregate improvement:** whether overall AI Quality Score improves.
+- **Dimension-level improvement:** whether the specific capability targeted by
+  each intervention improves.
+
+An increase in the overall score should not be treated as sufficient evidence
+of improvement when a material trust-related failure becomes worse.

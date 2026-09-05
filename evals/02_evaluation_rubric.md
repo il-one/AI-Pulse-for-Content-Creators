@@ -47,7 +47,7 @@ can reduce user trust and make otherwise useful market intelligence unreliable.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | All material claims are accurate, supported by the source, and free of meaningful distortion. |
 | 4 | Substantially accurate with minor imprecision that does not change the meaning. |
 | 3 | Generally accurate but contains notable omissions, ambiguity, or imprecision. |
@@ -76,7 +76,7 @@ as equivalent levels of evidence.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | Source is correctly represented, appropriately attributed, and claims are fully supported. |
 | 4 | Source handling is substantially correct with minor attribution or framing issues. |
 | 3 | Source is identifiable but confidence or attribution is insufficiently clear. |
@@ -106,7 +106,7 @@ recency window.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | Update clearly falls within the requested time window. |
 | 4 | Update falls within the window with minor timestamp ambiguity. |
 | 3 | Timing is unclear and requires additional interpretation. |
@@ -143,7 +143,7 @@ capabilities, workflows, competition, adoption, or market direction.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | Clearly significant to the target AI market with strong practical or strategic implications. |
 | 4 | Meaningfully relevant with identifiable market or product implications. |
 | 3 | Moderately relevant but with limited or indirect implications. |
@@ -172,7 +172,7 @@ Whether the update is assigned to the most appropriate AI Pulse category.
 ### Categories
 
 | Category | Definition |
-|---|---|
+|:---|:---|
 | **Model** | A new or materially updated AI model or model family is the primary announcement. |
 | **Feature** | A new or materially changed product capability or workflow feature is the primary announcement. |
 | **Funding** | The central update concerns investment, fundraising, acquisition-related financing, or similar capital activity. |
@@ -182,7 +182,7 @@ Whether the update is assigned to the most appropriate AI Pulse category.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | Correct primary category with clear supporting rationale. |
 | 4 | Reasonable category with minor ambiguity. |
 | 3 | Plausible but debatable classification. |
@@ -207,7 +207,7 @@ concisely, and usefully.
 ### Scoring
 
 | Score | Definition |
-|---|---|
+|:---|:---|
 | 5 | Concise, clear, complete, and immediately useful. |
 | 4 | Strong summary with minor omissions or verbosity. |
 | 3 | Understandable but requires additional interpretation or contains unnecessary detail. |
@@ -253,7 +253,7 @@ This prevents the evaluator from judging an output solely on whether it
 product requirements.
 
 | Field | Purpose | Primary Evaluation Dimension |
-|---|---|---|
+|:---|:---|:---|
 | `input` | Defines evaluation context such as time window and target market | Recency, Market Relevance |
 | `source` | Establishes the evidence used to judge factual claims | Factual Accuracy, Source Integrity |
 | `expected.should_include` | Establishes whether the update belongs in the feed | Recency, Market Relevance |
@@ -273,7 +273,7 @@ Each dimension is scored from 1–5 and weighted according to its importance
 to the AI Pulse product.
 
 | Dimension | Weight |
-|---|---:|
+|:---|---:|
 | Factual Accuracy | 30% |
 | Source Integrity | 20% |
 | Market Relevance | 20% |

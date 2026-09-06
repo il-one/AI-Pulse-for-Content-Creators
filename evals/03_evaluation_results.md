@@ -232,3 +232,34 @@ A system should not be considered improved solely because its aggregate score
 increased if critical failure modes remain unresolved.
 
 ---
+
+## 6. Product Decision
+
+### Current Status
+
+**Assessing root cause of failing updates.**
+
+### Decision Criteria
+
+The evaluation should inform one of three outcomes:
+
+**Advance**
+
+The system demonstrates sufficient improvement against the evaluation criteria
+and no unresolved critical failure prevents the next stage.
+
+**Iterate**
+
+The system shows meaningful progress but has recurring weaknesses that should
+be addressed through another prompt, data, model, or product intervention.
+
+**Reconsider**
+
+The evaluation reveals fundamental limitations that require a material change
+to the system or product approach.
+
+### Decision Rationale
+
+[Document the evidence supporting the decision.]
+
+---

@@ -116,13 +116,13 @@ Note status.
 
 | Dimension | Before | After | Change |
 |:---|---|---|---|
-| Factual Accuracy |  |  |  |
-| Source Integrity |  |  |  |
-| Recency |  |  |  |
-| Market Relevance |  |  |  |
-| Categorization |  |  |  |
-| Summary Quality |  |  |  |
-| **Overall AI Quality Score** |  |  |  |
+| Factual Accuracy | 5 | 5 | 5 |
+| Source Integrity | 3 | 3 | 3 |
+| Recency | 5 | 5 | 5 |
+| Market Relevance | N/A | N/A | N/A |
+| Categorization | N/A | N/A | N/A |
+| Summary Quality | 5 | 5 | 5 |
+| **Overall AI Quality Score** | 4 | 4 | 4 |
 
 **Product Interpretation**
 
@@ -202,3 +202,33 @@ Evaluation should focus on both:
 
 An increase in the overall score should not be treated as sufficient evidence
 of improvement when a material trust-related failure becomes worse.
+
+---
+
+## 5. Failure Summary
+
+Detailed failure analysis is maintained in
+[`failure_analysis.md`](./failure_analysis.md).
+
+| Failure Pattern | First Observed | Severity | Affected Dimension | Resolution |
+|---|---|---|---|---|
+| Source hallucinations | 9/3/2026 | High | Source Integrity | Corrected fallback output.  |
+| TBD | TBD | TBD | TBD | TBD |
+| TBD | TBD | TBD | TBD | TBD |
+
+### Critical Failure Types
+
+Particular attention should be given to:
+
+- Unsupported factual claims
+- Misrepresented or weakly sourced information
+- Stale updates incorrectly presented as recent
+- Low-relevance updates receiving high relevance scores
+- Incorrect category assignments
+- Unsupported market-impact claims
+- Duplicate representations of the same underlying update
+
+A system should not be considered improved solely because its aggregate score
+increased if critical failure modes remain unresolved.
+
+---

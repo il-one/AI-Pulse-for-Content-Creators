@@ -116,13 +116,13 @@ Note status.
 
 | Dimension | Before | After | Change |
 |:---|---|---|---|
-| Factual Accuracy | 5 | 5 | 5 |
-| Source Integrity | 3 | 3 | 3 |
-| Recency | 5 | 5 | 5 |
+| Factual Accuracy | 5 | 5 | 0 |
+| Source Integrity | 3 | 3 | 0 |
+| Recency | 5 | 5 | 0 |
 | Market Relevance | N/A | N/A | N/A |
 | Categorization | N/A | N/A | N/A |
-| Summary Quality | 5 | 5 | 5 |
-| **Overall AI Quality Score** | 4 | 4 | 4 |
+| Summary Quality | 5 | 5 | 0 |
+| **Overall AI Quality Score** | 4 | 4 | 0 |
 
 **Product Interpretation**
 
@@ -157,13 +157,13 @@ Note status.
 
 | Dimension | Before | After | Change |
 |:---|---|---|---|
-| Factual Accuracy |  |  |  |
-| Source Integrity |  |  |  |
-| Recency |  |  |  |
-| Market Relevance |  |  |  |
-| Categorization |  |  |  |
-| Summary Quality |  |  |  |
-| **Overall AI Quality Score** |  |  |  |
+| Factual Accuracy | 5 | 5 | 0 |
+| Source Integrity | 3 | 3 | 0 |
+| Recency | 5 | 5 | 0 |
+| Market Relevance | 4 | 4 | 0 |
+| Categorization | 5 | 5 | 0 |
+| Summary Quality | 5 | 5 | 0 |
+| **Overall AI Quality Score** | 4 | 4 | 0 |
 
 **Product Interpretation**
 
@@ -186,9 +186,9 @@ This table provides the primary view of whether the system is improving
 over time.
 
 | Iteration | Factual Accuracy | Source Integrity | Recency | Market Relevance | Categorization | Summary Quality | Overall |
-|:---|---|---|---|---|---|---|---|
-| Iteration 0 |  |  |  |  |  |  |  |
-| Iteration 1 |  |  |  |  |  |  |  |
+|:---|---:|---:|---:|---:|---:|---:|---:|
+| Iteration 0 | 5 | 3 | 5 | N/A | N/A | 5 | 4 |
+| Iteration 1 | 5 | 3 | 5 | 4 | 5 | 5 | 4 |
 | Iteration 2 |  |  |  |  |  |  |  |
 | Iteration 3 |  |  |  |  |  |  |  |
 
@@ -211,7 +211,7 @@ Detailed failure analysis is maintained in
 [`failure_analysis.md`](./failure_analysis.md).
 
 | Failure Pattern | First Observed | Severity | Affected Dimension | Resolution |
-|---|---|---|---|---|
+|:---|:---|:---|:---|:---|
 | Source hallucinations | 9/3/2026 | High | Source Integrity | Corrected fallback output.  |
 | TBD | TBD | TBD | TBD | TBD |
 | TBD | TBD | TBD | TBD | TBD |

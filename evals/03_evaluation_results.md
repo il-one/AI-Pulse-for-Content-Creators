@@ -263,3 +263,24 @@ to the system or product approach.
 [Document the evidence supporting the decision.]
 
 ---
+
+## 7. Next Evaluation
+
+### Hypothesis
+
+[What do we believe will improve?]
+
+### Planned Intervention
+
+[What will change?]
+
+### Success Criteria
+
+[Which evaluation dimensions should improve, and by how much?]
+
+### Evaluation Scope
+
+- Same golden dataset version unless the dataset itself is being revised.
+- Same scoring rubric.
+- Comparable model configuration where possible.
+- Results documented before moving to the next iteration.

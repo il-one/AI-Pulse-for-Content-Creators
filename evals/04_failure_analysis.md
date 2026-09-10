@@ -52,3 +52,37 @@ Intervention
 Re-evaluation
        ↓
 Residual Risk
+```
+The analysis should distinguish between an observed failure and a
+hypothesized root cause.
+
+A failure can be directly observed from an evaluation output. Its underlying
+cause may require additional testing.
+
+Therefore:
+
+- Observed Behavior should describe what actually happened.
+- Evidence should identify the test case, source material, or evaluation
+result supporting the finding.
+- Root Cause Hypothesis should identify the proposed explanation and should
+not be presented as proven without supporting evidence.
+- Intervention should describe the change made in response.
+- Result should only contain measured evidence from a subsequent evaluation.
+
+---
+
+## 3. Failure Taxonomy
+
+Failures should be classified according to the primary capability that broke.
+
+### 3.1 Factual Accuracy Failures
+
+The output contains incorrect, distorted, incomplete, or unsupported factual
+claims relative to the available source evidence.
+
+Examples include:
+
+- Claiming a feature exists when the source does not state this.
+- Misstating what a newly released model can do.
+- Adding unsupported product capabilities.
+- Turning speculation into a factual statement.

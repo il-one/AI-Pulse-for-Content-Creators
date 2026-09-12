@@ -86,3 +86,71 @@ Examples include:
 - Misstating what a newly released model can do.
 - Adding unsupported product capabilities.
 - Turning speculation into a factual statement.
+
+### 3.2 Source Integrity Failures
+
+The output incorrectly represents the authority, confidence, or relationship
+between an output claim and its source.
+
+Examples include:
+
+- Presenting secondary reporting as an official announcement.
+- Treating an unconfirmed report as a confirmed product release.
+- Failing to prefer an official source when one is available.
+- Citing a source that does not actually support the associated claim.
+
+### 3.3 Recency Failures
+
+The system incorrectly handles the requested time window.
+
+Examples include:
+
+Surfacing an announcement outside the requested window.
+Treating the date of secondary coverage as the date of the underlying event.
+Omitting a qualifying recent update because of timestamp interpretation.
+Presenting stale information as a current update.
+
+### 3.4 Market Relevance Failures
+
+The system incorrectly estimates the significance of an update to the target AI
+market.
+
+Examples include:
+
+Assigning a high relevance score to an announcement with little practical
+market impact.
+Overweighting publicity or popularity.
+Underestimating a less-publicized update with significant product or
+competitive implications.
+Confusing broad AI interest with meaningful market significance.
+
+### 3.5 Categorization Failures
+
+The system assigns an incorrect primary category.
+
+AI Pulse uses five categories:
+
+Model
+Feature
+Funding
+Viral
+Other
+
+Examples include:
+
+Classifying a model release as Feature.
+Classifying a funding announcement as Viral.
+Selecting multiple implied topics rather than identifying the primary event.
+Using Other when the evidence supports a more specific category.
+
+### 3.6 Summary Quality Failures
+
+The system identifies the correct update but communicates it poorly.
+
+Examples include:
+
+Excessive verbosity.
+Missing the primary development.
+Failing to communicate meaningful market implications.
+Including unnecessary background information.
+Producing a summary that is technically accurate but difficult to scan.

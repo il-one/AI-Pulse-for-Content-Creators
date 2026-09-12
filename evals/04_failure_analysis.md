@@ -105,10 +105,10 @@ The system incorrectly handles the requested time window.
 
 Examples include:
 
-Surfacing an announcement outside the requested window.
-Treating the date of secondary coverage as the date of the underlying event.
-Omitting a qualifying recent update because of timestamp interpretation.
-Presenting stale information as a current update.
+- Surfacing an announcement outside the requested window.
+- Treating the date of secondary coverage as the date of the underlying event.
+- Omitting a qualifying recent update because of timestamp interpretation.
+- Presenting stale information as a current update.
 
 ### 3.4 Market Relevance Failures
 
@@ -117,12 +117,12 @@ market.
 
 Examples include:
 
-Assigning a high relevance score to an announcement with little practical
+- Assigning a high relevance score to an announcement with little practical
 market impact.
-Overweighting publicity or popularity.
-Underestimating a less-publicized update with significant product or
+- Overweighting publicity or popularity.
+- Underestimating a less-publicized update with significant product or
 competitive implications.
-Confusing broad AI interest with meaningful market significance.
+- Confusing broad AI interest with meaningful market significance.
 
 ### 3.5 Categorization Failures
 
@@ -138,10 +138,8 @@ Other
 
 Examples include:
 
-Classifying a model release as Feature.
-Classifying a funding announcement as Viral.
-Selecting multiple implied topics rather than identifying the primary event.
-Using Other when the evidence supports a more specific category.
+- Classifying a model release as Feature.
+- Using Other when the evidence supports a more specific category.
 
 ### 3.6 Summary Quality Failures
 
@@ -149,8 +147,53 @@ The system identifies the correct update but communicates it poorly.
 
 Examples include:
 
-Excessive verbosity.
-Missing the primary development.
-Failing to communicate meaningful market implications.
-Including unnecessary background information.
-Producing a summary that is technically accurate but difficult to scan.
+- Excessive verbosity.
+- Missing the primary development.
+- Failing to communicate meaningful market implications.
+- Including unnecessary background information.
+- Producing a summary that is technically accurate but difficult to scan.
+
+## 4. Failure Severity
+
+Not every failure has the same product impact.
+
+### Critical
+
+A failure that materially undermines trust or causes the product to communicate false information.
+
+**Examples:**
+
+- Fabricated claims.
+- Material factual contradictions.
+- False representation of unconfirmed information as official.
+- Systematic source or citation failures.
+
+### High
+
+A failure that can meaningfully distort the user's understanding of the AI market or significantly degrade feed quality.
+
+**Examples:**
+
+- Repeated high relevance scores for low-impact updates.
+- Systematic inclusion of stale information.
+- Major category misclassification across a recurring scenario.
+
+### Medium
+
+A noticeable quality issue that reduces usefulness but does not materially misrepresent the underlying information.
+
+**Examples:**
+
+- Moderate relevance-score errors.
+- Minor category ambiguity.
+- Incomplete but generally accurate summaries.
+
+### Low
+
+A minor presentation or interpretation issue with limited product impact.
+
+**Examples:**
+
+- Slightly verbose summaries.
+- Minor wording imprecision that does not change meaning.
+- Non-material formatting inconsistencies.

@@ -197,3 +197,68 @@ A minor presentation or interpretation issue with limited product impact.
 - Slightly verbose summaries.
 - Minor wording imprecision that does not change meaning.
 - Non-material formatting inconsistencies.
+
+---
+
+## 5. Failure Cases
+
+Only documented, observed failures should be entered as completed case studies.
+
+The cases below define the structure to use when a failure is discovered. They
+should remain marked as **Pending observed evaluation** until the behavior has
+actually been observed in an evaluation run.
+
+### Failure Case FA-001 — High Publicity, Low Market Relevance
+
+**Status:** Pending observed evaluation
+
+#### Context
+
+The system surfaces an AI announcement that receives substantial public
+attention but has limited practical significance to the target AI market.
+
+#### Expected Behavior
+
+The system should assign a moderate or low market relevance score when the
+announcement does not materially affect products, capabilities, workflows,
+adoption, competition, or market direction.
+
+#### Observed Behavior
+
+[Document the actual output and relevance score.]
+
+#### Why It Matters
+
+AI Pulse is intended to reduce information overload. If publicity is treated
+as a proxy for importance, high-noise announcements can displace developments
+with greater practical or strategic significance.
+
+#### Root Cause Hypothesis
+
+The relevance logic may over-weight popularity, publicity, or volume of coverage
+relative to practical market impact.
+
+#### Evidence
+
+- **Golden dataset case:** [TC-XXX]
+- **Observed relevance score:** [XX]
+- **Expected relevance range:** [XX–XX]
+
+#### Product/System Intervention
+
+[Document the change made.]
+
+Potential interventions may include:
+
+- Revising the relevance definition.
+- Adjusting prompt instructions.
+- Adding explicit market-impact criteria.
+- Adding evaluation cases designed to separate publicity from significance.
+
+#### Result
+
+[Document measured result after re-evaluation.]
+
+#### Residual Risk
+
+[Document remaining uncertainty or related failure modes.]

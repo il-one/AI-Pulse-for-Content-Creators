@@ -208,7 +208,88 @@ The cases below define the structure to use when a failure is discovered. They
 should remain marked as **Pending observed evaluation** until the behavior has
 actually been observed in an evaluation run.
 
-### Failure Case FA-001 — High Publicity, Low Market Relevance
+### Failure Case FA-001 — Failure to Pull Updates/Overreliance on Fallback Set
+
+**Status:** Observed failure
+
+#### Context
+
+AI Pulse uses a fallback set when the primary retrieval process with the Google search tool fails or does not return
+enough qualifying AI market updates for the requested time window.
+
+The fallback mechanism is intended to preserve feed usefulness when recent
+results are sparse. However, repeated use of the fallback set can create the
+appearance of fresh market activity without sufficient evidence that new
+qualifying updates are available.
+
+#### Expected Behavior
+
+The fallback set should function as a temporary recovery mechanism, not as a
+persistent substitute for current market retrieval.
+
+When the primary retrieval process does not identify enough qualifying updates,
+AI Pulse may supplement the feed with fallback items according to the product's
+defined fallback rules.
+
+Repeated refreshes should not continuously present the same fallback items as
+though they represent newly retrieved market activity.
+
+When the search tool fails:
+
+- The system may use the fallback set to preserve continuity.
+- The fallback state should be identifiable to the system and, where
+  appropriate, to the user.
+- Repeated search failures should not silently result in the same fallback
+  content being presented as though it were newly retrieved information.
+- The system should detect and distinguish between **freshly retrieved results**
+  and **fallback results**.
+  
+#### Observed Behavior
+
+The fallback set was displayed across multiple consecutive refreshes instead of
+being replaced by newly retrieved market updates.
+**UPDATE BOOKMARK**
+[Document the actual output and relevance score.]
+
+#### Why It Matters
+
+AI Pulse is intended to reduce information overload. If publicity is treated
+as a proxy for importance, high-noise announcements can displace developments
+with greater practical or strategic significance.
+
+#### Root Cause Hypothesis
+
+The relevance logic may over-weight popularity, publicity, or volume of coverage
+relative to practical market impact.
+
+#### Evidence
+
+- **Golden dataset case:** [TC-XXX]
+- **Observed relevance score:** [XX]
+- **Expected relevance range:** [XX–XX]
+
+#### Product/System Intervention
+
+[Document the change made.]
+
+Potential interventions may include:
+
+- Revising the relevance definition.
+- Adjusting prompt instructions.
+- Adding explicit market-impact criteria.
+- Adding evaluation cases designed to separate publicity from significance.
+
+#### Result
+
+[Document measured result after re-evaluation.]
+
+#### Residual Risk
+
+[Document remaining uncertainty or related failure modes.]
+
+---
+
+### Failure Case FA-002 [Example template] — High Publicity, Low Market Relevance
 
 **Status:** Pending observed evaluation
 
@@ -260,5 +341,3 @@ Potential interventions may include:
 [Document measured result after re-evaluation.]
 
 #### Residual Risk
-
-[Document remaining uncertainty or related failure modes.]

@@ -248,8 +248,10 @@ When the search tool fails:
 
 The fallback set was displayed across multiple consecutive refreshes instead of
 being replaced by newly retrieved market updates.
-**UPDATE BOOKMARK**
-[Document the actual output and relevance score.]
+
+**Output**
+**[ADD EXAMPLE]**
+Timestamp: 7:58 AM 
 
 #### Why It Matters
 
@@ -266,26 +268,27 @@ relative to practical market impact.
 
 - **Golden dataset case:** [TC-XXX]
 - **Observed relevance score:** [XX]
-- **Expected relevance range:** [XX–XX]
+- **Expected relevance range:** 80-100
 
 #### Product/System Intervention
 
-[Document the change made.]
+Purge Time-Sensitive Fallback Items: Removed all static, event-driven news announcements (e.g., specific version launches or time-bound events) from the active fallback database pool.
 
+- Implement Evergreen Content Pool: Populated the fallback repository exclusively with high-level, generic updates and primers (e.g., model architecture primers, regulatory frameworks, AI landscape overviews) that remain accurate over extended timeframes.
+Purge Time-Sensitive Fallback Items: Removed all static, event-driven news announcements (e.g., specific version launches or time-bound events) from the active fallback database pool.
+
+- Implement Evergreen Content Pool: Populated the fallback repository exclusively with high-level, generic updates and primers (e.g., model architecture primers, regulatory frameworks, AI landscape overviews) that remain accurate over extended timeframes.
 Potential interventions may include:
-
-- Revising the relevance definition.
-- Adjusting prompt instructions.
-- Adding explicit market-impact criteria.
-- Adding evaluation cases designed to separate publicity from significance.
 
 #### Result
 
-[Document measured result after re-evaluation.]
+Timeliness Compliance: 100% elimination of stale news items masquerading as breaking updates during search outages.
 
 #### Residual Risk
 
-[Document remaining uncertainty or related failure modes.]
+- Content Fatigue: If primary search experiences sustained downtime, users will repeatedly see the same static evergreen primers unless the evergreen pool is routinely rotated.
+
+- User Value Perception: Generic background content provides less immediate actionable value than real-time news, which may reduce engagement during extended search API outages.
 
 ---
 

@@ -208,7 +208,7 @@ The cases below define the structure to use when a failure is discovered. They
 should remain marked as **Pending observed evaluation** until the behavior has
 actually been observed in an evaluation run.
 
-### Failure Case FA-001 — Failure to Pull Updates/Overreliance on Fallback Set
+### Failure Case FA-001 — Failure to Pull Recent Updates/Overreliance on Fallback Set
 
 **Status:** Observed failure
 
@@ -250,8 +250,12 @@ The fallback set was displayed across multiple consecutive refreshes instead of
 being replaced by newly retrieved market updates.
 
 **Output**
-**[ADD EXAMPLE]**
-Timestamp: 7:58 AM 
+Timestamp: 9/17/2026 7:58 AM 
+
+<img width="1078" height="441" alt="image" src="https://github.com/user-attachments/assets/59289ffb-04b8-4bcf-95b0-6044bc69b021" />
+
+<img width="1078" height="441" alt="image" src="https://github.com/user-attachments/assets/68dcbbb2-fd00-479b-9c13-6ba07d39979f" />
+
 
 #### Why It Matters
 
@@ -266,8 +270,8 @@ relative to practical market impact.
 
 #### Evidence
 
-- **Golden dataset case:** [TC-XXX]
-- **Observed relevance score:** [XX]
+- **Golden dataset case:** TC-006
+- **Observed relevance score:** 98
 - **Expected relevance range:** 80-100
 
 #### Product/System Intervention

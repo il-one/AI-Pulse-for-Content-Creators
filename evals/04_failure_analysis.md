@@ -249,12 +249,51 @@ When the search tool fails:
 The fallback set was displayed across multiple consecutive refreshes instead of
 being replaced by newly retrieved market updates.
 
-**Output**
+Output (text-based render):
+
 Timestamp: 9/17/2026 7:58 AM 
 
-<img width="1078" height="441" alt="image" src="https://github.com/user-attachments/assets/59289ffb-04b8-4bcf-95b0-6044bc69b021" />
+> ### [ `GEMINI` ] [ `MODEL` ]`↗ Score: 90%`
+>
+> ## The Latest on Gemini Models & Updates
+> Google's releases for Gemini large language models (LLMs), multimodal reasoning, real-time audio and vision processing, and deep integration across Google Workspace.
+>
+> ---
+> **✦ POPULARITY & IMPACT** `90/100`  
+> `[██████████████████████████████░░░░]` **90%**
+>
+> ---
+> <sub>🕒 Sep 18</sub> &nbsp;•&nbsp; [**Details ↗**](#)
 
-<img width="1078" height="441" alt="image" src="https://github.com/user-attachments/assets/68dcbbb2-fd00-479b-9c13-6ba07d39979f" />
+> `CLAUDE` &nbsp; `MODEL` <span align="right">`↗ Score: 98%`</span>
+>
+> ## Claude 3.7 Sonnet introduces agentic coding modes
+>
+> Anthropic has launched Claude 3.7 Sonnet, the first hybrid reasoning model that allows users to toggle between standard and extended thinking modes. This capability significantly improves performance in complex software engineering tasks and multi-step creative workflows.
+>
+> ---
+>
+> ✧ **POPULARITY & IMPACT** <span align="right">**98/100**</span>  
+> `█████████████████████████████████████████████████░`
+>
+> ---
+>
+> ◷ SEP 17 <span align="right">[**Details ↗**](#)</span>
+
+> `CHATGPT` &nbsp; `MODEL` <span align="right">`↗ Score: 95%`</span>
+>
+> ## OpenAI Introduces o3-mini for High-Level Reasoning
+>
+> The new o3-mini model is optimized for complex logical workflows and creative brainstorming, providing faster inference times. It allows creators to iterate on interactive scripts and storyboard logic with greater precision.
+>
+> ---
+>
+> ✧ **POPULARITY & IMPACT** <span align="right">**95/100**</span>  
+> `████████████████████████████████████████████████░░`
+>
+> ---
+>
+> ◷ SEP 17 <span align="right">[**Details ↗**](#)</span>
 
 
 #### Why It Matters

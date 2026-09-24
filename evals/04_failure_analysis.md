@@ -387,3 +387,49 @@ Potential interventions may include:
 [Document measured result after re-evaluation.]
 
 #### Residual Risk
+
+[Document remaining uncertainty.]
+
+## 6. Cross-Failure Patterns
+
+Once multiple evaluation cycles have been completed, recurring failures should be analyzed across cases rather than treated independently.
+
+| Pattern | Affected Cases | Frequency | Severity | Likely Cause | Intervention |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| *TBD* | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+
+---
+
+### Pattern Analysis
+
+Recurring failures should be investigated for evidence of systematic behavior.
+
+```mermaid
+flowchart TD
+    A[Individual failures] --> B[Common characteristics]
+    B --> C[Potential systematic cause]
+    C --> D[Intervention]
+    D --> E[Re-test multiple cases]
+```
+
+## 7. Product Implications
+
+Failure analysis should translate technical or model behavior into product implications.
+
+| Dimension | Key Question |
+| :--- | :--- |
+| **User Impact** | How does the failure affect the user's experience or decision-making? |
+| **Product Impact** | How does the failure affect the value proposition or trustworthiness of AI Pulse? |
+| **Risk** | What happens if the failure remains unresolved? |
+| **Priority** | Why should this failure be addressed now versus later? |
+
+---
+
+### Prioritization Framework
+
+A useful framework for evaluating and prioritizing failure resolution:
+
+$$\text{Prioritization} = \text{Impact} \times \text{Frequency} \times \text{Trust Risk}$$
+
+> [!IMPORTANT]
+> A low-frequency failure may still warrant immediate attention when its trust impact is high.

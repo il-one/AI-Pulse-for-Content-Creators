@@ -433,3 +433,30 @@ $$\text{Prioritization} = \text{Impact} \times \text{Frequency} \times \text{Tru
 
 > [!IMPORTANT]
 > A low-frequency failure may still warrant immediate attention when its trust impact is high.
+
+---
+
+## 8. Prompt / System Changes
+
+Each intervention should be recorded here after it has been implemented.
+
+| Change ID | Failure Addressed | Intervention | Type | Expected Effect | Measured Result |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `CHG-001` | TBD | TBD | `Prompt` | TBD | TBD |
+| `CHG-002` | TBD | TBD | `Retrieval` | TBD | TBD |
+| `CHG-003` | TBD | TBD | `Product` | TBD | TBD |
+
+### Intervention Types
+
+Use the following labels where applicable:
+
+* `Prompt`
+* `System`
+* `Retrieval`
+* `Data`
+* `Model`
+* `Product`
+* `Evaluation`
+
+> [!NOTE]
+> This classification helps distinguish a prompting problem from a problem that requires a broader product or technical intervention.

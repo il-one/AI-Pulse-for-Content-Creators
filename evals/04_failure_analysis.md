@@ -460,3 +460,24 @@ Use the following labels where applicable:
 
 > [!NOTE]
 > This classification helps distinguish a prompting problem from a problem that requires a broader product or technical intervention.
+
+---
+
+## 9. Failure Analysis Principles
+
+AI Pulse failure analysis follows five principles:
+
+1. **Evidence before explanation**  
+   Document what happened before proposing why it happened.
+
+2. **Hypotheses are not facts**  
+   Root causes should be labeled as hypotheses until supported by testing.
+
+3. **Fix the right layer**  
+   Not every AI failure should be solved with prompt changes.
+
+4. **Measure the intervention**  
+   A proposed fix is not validated until subsequent evaluation demonstrates improvement.
+
+5. **Preserve failure history**  
+   Resolved failures should remain documented so future iterations can avoid regressions.

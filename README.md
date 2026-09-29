@@ -40,7 +40,7 @@ To validate product-market fit and ensure sustained user engagement, platform he
 This repository serves as a comprehensive Product Management artifact library. It maps the end-to-end product lifecycle of the AI Pulse Tracker from initial user discovery to technical systems architecture.
 
 * **`/docs` : Core Product Strategy Documentation**
-    * `product_requirement_doc.md`: The finalized PRD detailing product scope, prioritized user stories (P0/P1), and strict functional constraints.
+    * `product_requirements_doc.md`: The finalized PRD detailing product scope, prioritized user stories (P0/P1), and strict functional constraints.
     * `user_research_&_personas.md`: Target audience insights defining target demographics ("Gary the YouTuber" and "Nora the Newsletter Writer").
     * `competitive_analysis.md`: A comprehensive market landscape map analyzing current aggregation gaps across mainstream tech curation engines.
 * **`/src` : Technical Execution & Delivery Workflows**
@@ -56,6 +56,6 @@ This repository serves as a comprehensive Product Management artifact library. I
 
 Note that specific details of product features, releases, and results may be omitted and replaced with templates. Hiring managers, engineering leads, and product leaders can audit the comprehensive product management lifecycle through the following strategic layers:
 
-1.  **Evaluate Product Strategy:** Review the [Product Requirement Document (PRD)](./docs/product_requirements_doc.md) to audit feature scoping, agile user prioritization frameworks, and non-functional engineering constraints.
+1.  **Evaluate Product Strategy:** Review the [Product Requirements Document (PRD)](./docs/product_requirements_doc.md) to audit feature scoping, agile user prioritization frameworks, and non-functional engineering constraints.
 2.  **Examine Technical Feasibility:** Navigate to the [/src directory](./src/) to inspect the API payloads, contextual prompt structures, and automated programmatic workflow logic.
 3.  **Analyze Data & Growth Mindset:** Audit the [KPI Framework](./analytics/kpi_framework.md) to understand how telemetry, automated database tracking, and iterative product loop analysis are applied to drive feature optimization.

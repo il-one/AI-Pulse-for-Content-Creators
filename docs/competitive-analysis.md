@@ -168,7 +168,7 @@ feeds, and company updates—to stay informed about the AI market.
 ### 3.2 Capability Comparison
 
 | Capability | There's An AI For That | Futurepedia | Product Hunt | Newsletters | Manual Monitoring | **AI Pulse** |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---|:---|:---|:---|:---|:---|:---|
 | Discover AI tools | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Track existing-tool updates | Limited | Limited | Limited | Partial | ✓ | **Core** |
 | Focus on recent updates | Limited | Partial | ✓ | Variable | ✓ | **Core** |
@@ -207,3 +207,49 @@ Contextual Summary
         ↓
 Consolidated AI Pulse
 ```
+
+## 3.4 Competitive Whitespace
+
+Based on the current analysis, the primary whitespace for AI Pulse is the
+intersection of four capabilities:
+
+### 1. Source Consolidation
+
+Reduce the need to monitor multiple blogs, newsletters, social feeds, and
+product sources independently.
+
+### 2. Market Relevance
+
+Prioritize meaningful developments rather than treating every AI mention as
+equally important.
+
+### 3. Contextual Synthesis
+
+Explain the significance of an update instead of simply reproducing the
+announcement.
+
+### 4. Structured Prioritization
+
+Use standardized categories and relevance scoring to make a high-volume update
+feed easier to scan.
+
+---
+
+## 3.5 Strategic Implication
+
+The competitive opportunity is therefore not to become another general-purpose
+AI news destination.
+
+AI Pulse should instead optimize for:
+
+> **Signal over volume.**
+
+The product should provide fewer, better-prioritized updates that reduce the
+time and cognitive effort required to monitor a rapidly changing AI market.
+
+This differentiation hypothesis should be validated through subsequent product
+experiments, user feedback, and competitive research rather than treated as a
+permanent competitive advantage.
+
+---
+

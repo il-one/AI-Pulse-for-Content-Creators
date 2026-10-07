@@ -208,34 +208,32 @@ Contextual Summary
 Consolidated AI Pulse
 ```
 
-## 3.4 Competitive Whitespace
+### 3.4 Competitive Whitespace
 
 Based on the current analysis, the primary whitespace for AI Pulse is the
 intersection of four capabilities:
 
-### 1. Source Consolidation
+#### 1. Source Consolidation
 
 Reduce the need to monitor multiple blogs, newsletters, social feeds, and
 product sources independently.
 
-### 2. Market Relevance
+#### 2. Market Relevance
 
 Prioritize meaningful developments rather than treating every AI mention as
 equally important.
 
-### 3. Contextual Synthesis
+#### 3. Contextual Synthesis
 
 Explain the significance of an update instead of simply reproducing the
 announcement.
 
-### 4. Structured Prioritization
+#### 4. Structured Prioritization
 
 Use standardized categories and relevance scoring to make a high-volume update
 feed easier to scan.
 
----
-
-## 3.5 Strategic Implication
+### 3.5 Strategic Implication
 
 The competitive opportunity is therefore not to become another general-purpose
 AI news destination.
@@ -253,3 +251,145 @@ permanent competitive advantage.
 
 ---
 
+## 4. User Job Coverage
+
+The competitive landscape becomes more useful when evaluated against the jobs
+users are actually trying to accomplish.
+
+AI Pulse's personas identify three distinct user contexts:
+
+- **Maya**, a full-time YouTuber who needs to stay ahead of AI editing and
+  scripting tools.
+- **Darius**, a content agency owner who needs to manage an AI toolstack across
+  multiple client workflows while controlling costs.
+- **Jen**, a growing creator who wants to understand the AI landscape without
+  being overwhelmed by technical information.
+
+The following framework compares how well each alternative addresses the
+underlying jobs represented across these personas.
+
+### 4.1 Core User Jobs
+
+| User Job | Maya | Darius | Jen |
+|---|:---:|:---:|:---:|
+| Discover relevant AI tools | ✓ | ✓ | ✓ |
+| Track changes to tools already being used | ✓ | ✓ | ✓ |
+| Identify the most important recent updates | ✓ | ✓ | ✓ |
+| Monitor multiple AI sources in one place | ✓ | ✓ | ✓ |
+| Reduce time spent manually monitoring AI news | ✓ | ✓ | ✓ |
+| Understand why an update matters | ✓ | ✓ | ✓ |
+| Identify implications for a specific workflow | ✓ | ✓ | ✓ |
+| Compare developments across the AI market | ✓ | ✓ | ✓ |
+| Monitor pricing or value changes |  | ✓ |  |
+| Avoid technical or unnecessary information | ✓ | ✓ | ✓ |
+| Stay ahead of competitors and market changes | ✓ | ✓ | ✓ |
+
+### 4.2 Competitive Coverage Matrix
+
+| User Job | There's An AI For That | Futurepedia | Product Hunt | Tool-Specific Newsletters | Manual Monitoring | **AI Pulse** |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Discover relevant AI tools | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Track existing-tool updates | Limited | Limited | Limited | Partial | ✓ | **Core** |
+| Identify recent developments | Limited | Partial | ✓ | Variable | ✓ | **Core** |
+| Consolidate multiple sources | Partial | Partial | Partial | ✓ | ✗ | **Core** |
+| Reduce manual monitoring | Partial | Partial | Partial | ✓ | ✗ | **Core** |
+| Explain why an update matters | Limited | Partial | Limited | Variable | Manual | **Core** |
+| Provide workflow context | Limited | Partial | Limited | Variable | Manual | **Core** |
+| Surface pricing changes | Limited | Partial | Limited | Variable | Manual | **Planned / Opportunity** |
+| Filter information overload | Partial | Partial | Limited | ✓ | Manual | **Core** |
+| Support market awareness | ✓ | ✓ | ✓ | ✓ | ✓ | **Core** |
+
+> **Note:** This matrix is a product-strategy framework based on the competitive
+> analysis documented in the PRD. It should be treated as a working hypothesis
+> until individual competitor capabilities are independently validated.
+
+### 4.3 Persona-to-Product Fit
+
+The competitive gaps become more significant when viewed through each persona's
+specific problem.
+
+#### Maya — Full-Time YouTuber
+
+**Job to be done:**
+
+> Stay ahead of AI editing and scripting developments without spending large
+> amounts of time monitoring sources manually.
+
+**Current friction:**
+
+Maya may discover important features months late through YouTube comments or
+competitor videos.
+
+**AI Pulse opportunity:**
+
+- Surface recent updates relevant to her workflow.
+- Reduce manual monitoring across fragmented sources.
+- Explain what changed and why it matters.
+- Prioritize high-impact developments rather than simply increasing the volume
+  of information.
+
+---
+
+#### Darius — Content Agency Owner
+
+**Job to be done:**
+
+> Monitor the AI toolstack across multiple client workflows while identifying
+> meaningful product and pricing changes.
+
+**Current friction:**
+
+Darius manually checks 12+ tool blogs each month, while pricing changes can
+create unexpected budget impacts.
+
+**AI Pulse opportunity:**
+
+- Consolidate monitoring across multiple tools and sources.
+- Surface meaningful product changes.
+- Highlight pricing-related developments.
+- Provide a centralized view of changes affecting the agency's toolstack.
+
+---
+
+#### Jen — Hobbyist Turned Creator
+
+**Job to be done:**
+
+> Understand important developments in the AI landscape without becoming
+> overwhelmed by technical information.
+
+**Current friction:**
+
+Jen is overwhelmed by news sites, Discord communities, and individual
+tool-specific emails.
+
+**AI Pulse opportunity:**
+
+- Filter unnecessary information.
+- Provide concise summaries.
+- Explain developments in straightforward language.
+- Highlight why an update matters rather than requiring users to interpret
+  technical announcements themselves.
+
+### 4.4 Coverage Gap
+
+Across the three personas, the common unmet job is not simply **discovering AI**.
+
+The broader job is:
+
+> **Continuously identify the AI developments that matter, understand their
+> significance, and avoid manually monitoring a fragmented set of sources.**
+
+This distinction informs AI Pulse's positioning.
+
+The product is therefore designed around the transition:
+
+```text
+Information Discovery
+        ↓
+Information Filtering
+        ↓
+Information Interpretation
+        ↓
+Prioritized Market Signal
+```

@@ -393,3 +393,247 @@ Information Interpretation
         ↓
 Prioritized Market Signal
 ```
+
+---
+
+## 5. Competitive Gaps
+
+The competitive analysis identifies five potential gaps in how existing
+alternatives help users monitor and interpret AI market developments.
+
+These gaps are derived from the competitive landscape and user problems
+documented in the product requirements document (PRD). They represent
+the product hypotheses AI Pulse is designed to address, not independently
+verified claims that every competitor lacks these capabilities.
+
+### 5.1 Gap 1 — Existing-Tool Update Tracking
+
+**Problem**
+
+AI tool directories and product launch platforms primarily support tool
+discovery or new product launches. Users who want to follow developments
+within tools they already use may need to consult additional sources.
+
+The PRD identifies this as a limitation of platforms such as There's An AI
+For That, Futurepedia, and Product Hunt.
+
+**User Impact**
+
+- Users may overlook important changes to existing AI products.
+- Discovering updates can require visiting individual product websites,
+  changelogs, and announcement pages.
+- Users may learn about useful capabilities after other market participants
+  have already adopted them.
+
+**AI Pulse Opportunity**
+
+Prioritize updates to existing and emerging AI products rather than focusing
+exclusively on new tool discovery or product launches.
+
+**Product Implications**
+
+- Monitor updates across relevant AI products and sources.
+- Identify meaningful changes to existing capabilities.
+- Distinguish ongoing product updates from new product launches.
+- Summarize what changed and why the development matters.
+
+**Validation Needed**
+
+Determine whether the intended audience struggles more with discovering new
+tools or keeping track of changes to tools they already use.
+
+---
+
+### 5.2 Gap 2 — Recency and Update Prioritization
+
+**Problem**
+
+AI product developments occur rapidly, making it difficult for users to
+identify which updates are recent and worth their attention.
+
+The PRD identifies recency as an area where existing directories and curated
+information sources may not adequately meet the product's intended use case.
+
+**User Impact**
+
+- Recent developments may be difficult to distinguish from older information.
+- Users may spend time reviewing updates that no longer represent the
+  latest state of a product.
+- Important announcements may be overlooked within a high-volume information
+  environment.
+
+**AI Pulse Opportunity**
+
+Organize the feed around recent developments and allow users to prioritize
+updates according to a defined time window.
+
+**Product Implications**
+
+- Support configurable 24-hour and 48-hour update windows.
+- Apply consistent timestamp handling.
+- Exclude updates outside the requested window unless the product explicitly
+  supports resurfacing older developments.
+- Prioritize meaningful updates without equating recency with importance.
+
+**Validation Needed**
+
+Measure whether configurable recency controls improve users' ability to find
+timely, meaningful updates and reduce time spent reviewing the feed.
+
+---
+
+### 5.3 Gap 3 — Fragmented Sources and Manual Monitoring
+
+**Problem**
+
+Users often rely on a combination of company blogs, developer changelogs,
+newsletters, social media, and other sources to monitor AI developments.
+
+Although these sources provide direct access to information, gathering and
+processing updates across them creates a fragmented workflow.
+
+The PRD identifies manual monitoring as a time-intensive alternative that
+lacks automatic consolidation and summarization.
+
+**User Impact**
+
+- Users must repeatedly visit different information sources.
+- Relevant updates are distributed across multiple channels.
+- Manually collecting, comparing, and summarizing announcements consumes time.
+- Maintaining consistent monitoring becomes difficult as the AI ecosystem grows.
+
+**AI Pulse Opportunity**
+
+Consolidate relevant updates from multiple sources into a single, structured
+monitoring experience.
+
+**Product Implications**
+
+- Aggregate information from relevant AI product sources.
+- Normalize updates into a consistent format.
+- Reduce duplicate representations of the same announcement.
+- Provide a centralized feed for reviewing recent developments.
+
+**Validation Needed**
+
+Determine which sources users currently monitor, how much time the process
+takes, and whether consolidation materially reduces their monitoring effort.
+
+---
+
+### 5.4 Gap 4 — Market Relevance and Signal-to-Noise Ratio
+
+**Problem**
+
+A high volume of AI announcements does not necessarily translate into useful
+market intelligence. Popularity, publicity, or novelty alone may not indicate
+whether an update has meaningful practical or strategic implications.
+
+Users need help distinguishing important developments from information that
+adds little value to their decisions or workflows.
+
+**User Impact**
+
+- Users must manually determine which announcements deserve attention.
+- Widely discussed developments may overshadow less publicized but important
+  product changes.
+- A large volume of low-value updates can reduce the usefulness of an
+  otherwise comprehensive feed.
+
+**AI Pulse Opportunity**
+
+Evaluate and prioritize updates according to market relevance rather than
+treating every announcement as equally important.
+
+**Product Implications**
+
+- Assign a relevance score to each update.
+- Apply standardized categories: `Model`, `Feature`, `Funding`, `Viral`,
+  and `Other`.
+- Distinguish general popularity from practical or strategic significance.
+- Make the reasons behind relevance judgments understandable to users.
+
+**Validation Needed**
+
+Evaluate relevance-scoring consistency against a golden dataset and determine
+whether higher-scoring updates align with explicit market-significance criteria.
+
+See [`../evals/02_evaluation_rubric.md`](../evals/02_evaluation_rubric.md)
+and [`../evals/01_golden_dataset.json`](../evals/01_golden_dataset.json).
+
+---
+
+### 5.5 Gap 5 — Actionable Interpretation
+
+**Problem**
+
+Knowing that an AI product has changed does not necessarily tell users why
+the change matters or whether they should act on it.
+
+News articles, announcements, and changelogs may communicate what happened
+without providing the concise interpretation needed by a user evaluating
+the update's implications.
+
+The PRD addresses this need through its emphasis on contextual summaries and
+a "what this means for you" layer.
+
+**User Impact**
+
+- Users must interpret technical announcements themselves.
+- The implications of a feature or model release may remain unclear.
+- Users may struggle to determine whether an update warrants further
+  investigation or adoption.
+
+**AI Pulse Opportunity**
+
+Translate announcements into concise summaries that explain the significance
+of an update and its potential implications.
+
+**Product Implications**
+
+- Identify the principal change in each announcement.
+- Summarize its significance using clear, accessible language.
+- Explain potential workflow, product, or market implications when supported
+  by available evidence.
+- Separate confirmed facts from interpretation or speculation.
+- Avoid claiming benefits or capabilities that the source does not support.
+
+**Validation Needed**
+
+Evaluate whether summaries accurately represent source material, communicate
+meaningful implications, and help users understand updates with less effort.
+
+---
+
+### 5.6 Summary of Competitive Gaps
+
+| Competitive Gap | Underlying User Problem | AI Pulse Response | Validation Approach |
+|---|---|---|---|
+| Existing-tool update tracking | Users may miss changes to products they already use | Focus on ongoing product updates | Assess coverage of meaningful updates to existing tools |
+| Recency and prioritization | Users struggle to identify timely developments | Configurable recency windows and prioritized updates | Test timestamp handling and inclusion rules |
+| Fragmented sources | Monitoring requires checking multiple channels | Consolidated update feed | Measure source coverage, duplication, and monitoring effort |
+| Market relevance | Important developments compete with low-value information | Relevance scoring and standardized categories | Evaluate relevance scores and classification accuracy |
+| Actionable interpretation | Users must interpret announcements themselves | Concise, contextual summaries | Evaluate factual accuracy, source integrity, and summary quality |
+
+### 5.7 Strategic Implication
+
+These gaps point toward a connected product opportunity rather than five
+independent features.
+
+AI Pulse is designed to reduce the effort required to move from fragmented
+information to meaningful market understanding:
+
+1. **Collect** relevant AI product updates.
+2. **Filter** information according to recency and inclusion criteria.
+3. **Prioritize** updates according to market relevance.
+4. **Categorize** developments consistently.
+5. **Explain** what changed and why it matters.
+6. **Consolidate** the resulting information into a single monitoring experience.
+
+The intended outcome is not simply a larger collection of AI news. It is a
+more efficient way to identify, understand, and act on meaningful AI market
+developments.
+
+These opportunities should be validated through competitive research,
+evaluation results, and user feedback before being treated as proven
+differentiation.
